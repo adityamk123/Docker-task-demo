@@ -16,5 +16,3 @@ docker rm webapp 2>/dev/null
 echo "Step 5: Running New Container..."
 docker run -d -p 8080:80 --name webapp adityakhiroji/demo-rep1:Dockertest
 
-echo "✅ Deployment Complete!"
-
