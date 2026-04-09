@@ -3,14 +3,11 @@
 echo "Step 1: Building Image"
 docker build -t adityakhiroji/demo-rep1:dockertest .
 
-#echo "Step 2: Tagging Image"
-#docker tag mywebapp adityakhiroji/demo-rep1:dockertest ;
 
 echo "Step 3: Pushing Image"
 docker push adityakhiroji/demo-rep1:dockertest ;
 
 echo "Step 4: Stopping Old Container (if exists)..."
-#docker stop webapp 2>/dev/null
 docker rm -f webapp ;
 
 docker system prune -af ;
